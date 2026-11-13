@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080610" />
+    <meta
+      name="description"
+      content="AKASH AK is a software engineer building software, websites, and AI-powered platforms."
+    />
+    <title>AKASH AK — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-grain" aria-hidden="true"></div>
+    <div class="scanline-layer" aria-hidden="true"></div>
+    <canvas class="particle-field" aria-hidden="true"></canvas>
+    <div class="scroll-meter" aria-hidden="true"><i id="scroll-meter"></i></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="AKASH AK home">
+        <span class="wordmark-mark">A<span>.</span></span>
+        <span class="wordmark-name">AKASH<span>_</span>AK</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#work">Projects<span>_02</span></a>
+        <a href="#contact">Connect<span>_03</span></a>
+        <a class="nav-availability" href="#contact"><span></span> SYSTEM ONLINE</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="eyebrow-line"></span> SOFTWARE ENGINEER <span class="eyebrow-year">// BUILD • LEARN • REPEAT</span></p>
+          <h1 class="hero-title glitch-title reveal" id="hero-title">
+            Building<br />
+            <span class="title-second-line"><span class="title-outline">things</span> that</span><br />
+            <span class="title-accent">move us<span class="title-period">_</span></span>
+          </h1>
+          <p class="hero-intro reveal">
+            I’m <strong>AKASH AK</strong> — I develop software and websites, and I’m exploring
+            what’s possible with machine learning and AI.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#work">
+              <span class="button-bracket">[</span> EXPLORE PROJECTS <span class="button-arrow" aria-hidden="true">↘</span>
+            </a>
+            <button class="scan-toggle" id="scan-toggle" type="button" aria-pressed="false">
+              <span class="scan-indicator"></span><span>SCAN MODE</span><strong>OFF</strong>
+            </button>
+          </div>
+        </div>
+        <div class="hero-world" role="group" aria-label="Interactive neon city. Select a project beacon to view details.">
+          <div class="city-scene" aria-hidden="true">
+            <span class="city-glow"></span>
+            <span class="city-sun"></span>
+            <span class="city-ring city-ring-one"></span>
+            <span class="city-ring city-ring-two"></span>
+            <div class="city-grid"></div>
+            <div class="city-skyline">
+              <span class="skyline-building building-one"></span>
+              <span class="skyline-building building-two"></span>
+              <span class="skyline-building building-three"></span>
+              <span class="skyline-building building-four"></span>
+              <span class="skyline-building building-five"></span>
+              <span class="skyline-building building-six"></span>
+              <span class="skyline-building building-core"><i></i><b></b></span>
+              <span class="skyline-building building-seven"></span>
+              <span class="skyline-building building-eight"></span>
+            </div>
+            <span class="city-scanline"></span>
+          </div>
+          <button class="world-node world-node-mpath" type="button" data-world-project="mpath" aria-label="Explore M-Path project">
+            <span class="node-dot"></span><span class="node-label">M-PATH<small>HEALTH / AI</small></span>
+          </button>
+          <button class="world-node world-node-ner" type="button" data-world-project="ner" aria-label="Explore NER project">
+            <span class="node-dot"></span><span class="node-label">NER<small>LOGISTICS / AI</small></span>
+          </button>
+          <button class="world-node world-node-learning" type="button" data-world-project="learning" aria-label="Explore learning platform project">
+            <span class="node-dot"></span><span class="node-label">LEARNING<small>EDUCATION</small></span>
+          </button>
+          <span class="world-coordinate world-coordinate-top" aria-hidden="true">NIGHT CITY // SECTOR 01</span>
+          <span class="world-coordinate world-coordinate-bottom" aria-hidden="true">NEURAL NETWORK ACTIVE</span>
+          <span class="world-instruction"><i></i> TARGET A PROJECT BEACON</span>
+        </div>
+        <div class="hero-telemetry" aria-label="Local time">
+          <span class="telemetry-dot"></span><span>LOCAL TIME</span><time id="city-clock">--:--:--</time>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> SCROLL TO JACK IN</a>
+        <div class="hero-index" aria-hidden="true">SYS. 001 / 003</div>
+      </section>
+
+      <section class="intro-section section-wrap" id="about" aria-labelledby="about-title">
+        <span class="section-orb about-orb" data-parallax="0.08" aria-hidden="true"></span>
+        <div class="section-kicker reveal"><span>01</span> / OPERATOR PROFILE</div>
+        <div class="intro-content">
+          <h2 class="section-heading reveal" id="about-title">
+            Curious by nature.<br />
+            <span>Builder by choice.</span>
+          </h2>
+          <div class="intro-description reveal">
+            <p>
+              I like turning ambitious ideas into useful digital experiences. From software and
+              websites to AI-powered platforms, I’m interested in making technology feel
+              thoughtful, practical, and human.
+            </p>
+            <p>
+              Right now, I’m learning more about machine learning and AI—and looking for
+              opportunities to keep building, collaborating, and growing.
+            </p>
+            <a class="text-link" href="#contact">A bit more about what I do <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+        <div class="principles reveal" aria-label="My approach">
+          <div><span class="principle-number">01</span><span>Stay curious</span><span class="principle-arrow">↗</span></div>
+          <div><span class="principle-number">02</span><span>Build with purpose</span><span class="principle-arrow">↗</span></div>
+          <div><span class="principle-number">03</span><span>Keep learning</span><span class="principle-arrow">↗</span></div>
+        </div>
+      </section>
+
+      <section class="work-section section-wrap" id="work" aria-labelledby="work-title">
+        <span class="section-orb work-orb" data-parallax="0.06" aria-hidden="true"></span>
+        <div class="work-heading">
+          <div>
+            <div class="section-kicker reveal"><span>02</span> / ACTIVE MISSIONS</div>
+            <h2 class="section-heading reveal" id="work-title">Ideas, <span>in progress.</span></h2>
+          </div>
+          <p class="work-note reveal">Three systems built to move healthcare, logistics, and education forward.</p>
+        </div>
+
+        <div class="project-grid">
+          <button class="project-card project-card-featured reveal" type="button" data-project="mpath" aria-haspopup="dialog">
+            <span class="project-card-top"><span>01 — HEALTHCARE / AI</span><span class="project-open" aria-hidden="true">↗</span></span>
+            <span class="project-art mpath-art" aria-hidden="true">
+              <span class="mpath-grid"></span>
+              <span class="mpath-cross">+</span>
+              <span class="mpath-ring mpath-ring-one"></span>
+              <span class="mpath-ring mpath-ring-two"></span>
+              <span class="mpath-pulse"></span>
+              <span class="art-caption">CARE, CONNECTED.</span>
+            </span>
+            <span class="project-card-bottom"><span class="project-name">M-Path</span><span class="project-description">A new path for healthcare infrastructure.</span></span>
+          </button>
+
+          <button class="project-card reveal" type="button" data-project="ner" aria-haspopup="dialog">
+            <span class="project-card-top"><span>02 — LOGISTICS / AI</span><span class="project-open" aria-hidden="true">↗</span></span>
+            <span class="project-art route-art" aria-hidden="true">
+              <span class="route-map route-map-one"></span><span class="route-map route-map-two"></span>
+              <svg viewBox="0 0 540 310" role="presentation">
+                <path class="route-path route-path-muted" d="M37 220 C115 204 91 127 182 154 S272 257 335 190 424 103 503 80" />
+                <path class="route-path route-path-active" d="M37 220 C115 204 91 127 182 154 S272 257 335 190" />
+              </svg>
+              <span class="route-pin route-pin-start"></span><span class="route-pin route-pin-end"></span>
+              <span class="route-warning">!</span>
+              <span class="art-caption">A SAFER WAY THROUGH.</span>
+            </span>
+            <span class="project-card-bottom"><span class="project-name">NER</span><span class="project-description">Safer routes through changing conditions.</span></span>
+          </button>
+
+          <button class="project-card reveal" type="button" data-project="learning" aria-haspopup="dialog">
+            <span class="project-card-top"><span>03 — EDUCATION / PLATFORM</span><span class="project-open" aria-hidden="true">↗</span></span>
+            <span class="project-art learning-art" aria-hidden="true">
+              <span class="learning-window"><span class="window-dots">•••</span><span class="learning-sidebar"><i></i><i></i><i></i></span><span class="learning-content"><i></i><i></i><i></i><span class="learning-progress"><b></b></span></span></span>
+              <span class="learning-orbit learning-orbit-one"></span><span class="learning-orbit learning-orbit-two"></span>
+              <span class="art-caption">ONE PLACE TO GROW.</span>
+            </span>
+            <span class="project-card-bottom"><span class="project-name">Online Learning Platform</span><span class="project-description">A connected space for school communities.</span></span>
+          </button>
+        </div>
+        <p class="project-hint reveal"><span class="hint-plus">+</span> Select a terminal to inspect its mission file</p>
+      </section>
+
+      <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
+        <div class="contact-topline"><span>03 / ESTABLISH UPLINK</span><span class="contact-status"><i></i> OPEN TO OPPORTUNITIES</span></div>
+        <div class="contact-main">
+          <div>
+            <p class="eyebrow reveal">INCOMING TRANSMISSION?</p>
+            <h2 class="contact-heading reveal" id="contact-title">Let’s build<br /><span>the future.</span></h2>
+          </div>
+          <div class="contact-aside reveal">
+            <p>I’m always up for a thoughtful conversation, a new challenge, or a chance to build something useful.</p>
+            <a class="button button-primary contact-button" href="mailto:akakash.sreesathya@gmail.com">
+              <span class="button-bracket">[</span> SEND TRANSMISSION <span class="button-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+        <a class="email-link reveal" href="mailto:akakash.sreesathya@gmail.com">akakash.sreesathya@gmail.com <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="footer-brand" href="#home">AKASH AK<span>.</span></a>
+      <span>END OF LINE // KEEP BUILDING</span>
+      <a class="back-top" href="#home">RETURN TO SURFACE <span aria-hidden="true">↑</span></a>
+      <span class="footer-year">© <span id="year"></span></span>
+    </footer>
+
+    <aside class="quest-hud" aria-label="Portfolio explorer quest">
+      <button class="hud-toggle" type="button" aria-expanded="false" aria-controls="quest-panel">
+        <span class="hud-heading"><span class="hud-symbol" aria-hidden="true">✳</span> PORTFOLIO QUEST <span class="hud-expand" aria-hidden="true">+</span></span>
+        <span class="hud-stats"><strong id="quest-count">0</strong><span> / 6 DISCOVERED</span><b id="quest-xp">0 XP</b></span>
+        <span class="hud-progress" aria-hidden="true"><i id="quest-progress"></i></span>
+      </button>
+      <div class="quest-panel" id="quest-panel" hidden>
+        <div class="quest-panel-heading"><span>MISSION LOG</span><span id="quest-rank">RANK 01 · ROOKIE</span></div>
+        <ul class="quest-list">
+          <li data-quest="about"><span class="quest-check" aria-hidden="true">○</span><span>Discover the builder</span><span class="quest-reward">+20 XP</span></li>
+          <li data-quest="work"><span class="quest-check" aria-hidden="true">○</span><span>Enter the project zone</span><span class="quest-reward">+20 XP</span></li>
+          <li data-quest="contact"><span class="quest-check" aria-hidden="true">○</span><span>Reach the final checkpoint</span><span class="quest-reward">+20 XP</span></li>
+          <li data-quest="mpath"><span class="quest-check" aria-hidden="true">○</span><span>Scan M-Path</span><span class="quest-reward">+20 XP</span></li>
+          <li data-quest="ner"><span class="quest-check" aria-hidden="true">○</span><span>Scan NER</span><span class="quest-reward">+20 XP</span></li>
+          <li data-quest="learning"><span class="quest-check" aria-hidden="true">○</span><span>Scan the learning platform</span><span class="quest-reward">+20 XP</span></li>
+        </ul>
+        <p class="quest-complete" hidden>ALL MISSIONS COMPLETE · YOU’RE A BUILDER.</p>
+        <p class="quest-toast" role="status" aria-live="polite"></p>
+      </div>
+    </aside>
+
+    <dialog class="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+      <p class="dialog-kicker"></p>
+      <h2 id="dialog-title"></h2>
+      <p class="dialog-description"></p>
+      <div class="dialog-detail">
+        <span>THE IDEA</span>
+        <p class="dialog-idea"></p>
+      </div>
+      <p class="dialog-footnote">Project concept · More details coming soon</p>
+    </dialog>
+  </body>
+</html>
